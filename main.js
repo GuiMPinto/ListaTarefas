@@ -6,10 +6,10 @@ $(document).ready(function()
         let tarefasHtml = $('[type="text"]').val()
         let itemLista = $('<li></li>')
         $(tarefasHtml).appendTo(itemLista)
+        $(itemLista).appendTo('ul')
         $('[type="text"]').val('')
-        $(itemLista)
     })
-
+    
     $(itemLista).click(function()
     {
         $(itemLista).style.text-decoration(line-throug)
