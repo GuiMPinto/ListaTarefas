@@ -4,7 +4,7 @@ $(document).ready(function()
     {
         e.preventDefault()
         let tarefasHtml = $('[type="text"]').val()
-        let itemLista = $('<li></li>')
+        let itemLista = $('<li>'+tarefasHtml+'</li>')
         $(tarefasHtml).appendTo(itemLista)
         $(itemLista).appendTo('ul')
         $('[type="text"]').val('')
