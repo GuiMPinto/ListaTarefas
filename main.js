@@ -10,8 +10,8 @@ $(document).ready(function()
         $('[type="text"]').val('')
     })
     
-    $(itemLista).click(function()
+    $("ul").on("click","li",function()
     {
-        $(itemLista).style.text-decoration(line-throug)
+        $(this).toogleClass("checked") 
     })
 })
