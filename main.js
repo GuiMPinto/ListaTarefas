@@ -12,6 +12,6 @@ $(document).ready(function()
     
     $("ul").on("click","li",function()
     {
-        $(this).toogleClass("checked") 
+        $(this).toggleClass("checked") 
     })
 })
